@@ -1,0 +1,123 @@
+/* Applies border-box sizing to all elements for easier layout calculations */
+* {
+  box-sizing: border-box;
+}
+
+/* Sets base font size for rem units */
+html {
+  font-size: 16px;
+}
+
+/* Sets the primary font for the page */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Main nutrition label container styling */
+.label {
+  border: 2px solid black;
+  width: 270px;
+  margin: 20px auto; /* centers the label */
+  padding: 0 7px;
+}
+
+/* Styles for the Nutrition Facts title */
+header h1 {
+  text-align: center;
+  margin: -4px 0;
+  letter-spacing: 0.15px;
+}
+
+/* Base style for all paragraphs in the label */
+p {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Reusable horizontal line divider */
+.divider {
+  border-bottom: 1px solid #888989;
+  margin: 2px 0;
+}
+
+/* Bolds text using font-weight 800 */
+.bold {
+  font-weight: 800;
+}
+
+/* Thick black line */
+.large {
+  height: 10px;
+}
+
+/* Large and medium lines use black background with no border */
+.large,
+.medium {
+  background-color: black;
+  border: 0;
+}
+
+/* Medium divider is slightly smaller than large */
+.medium {
+  height: 5px;
+}
+
+/* Smaller font for specific labels */
+.small-text {
+  font-size: 0.85rem;
+}
+
+/* Container for the calories label and number */
+.calories-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+/* Removes margin for calorie subtitle */
+.calories-info h2 {
+  margin: 0;
+}
+
+/* Enlarged, bold text for the word "Calories" */
+.left-container p {
+  margin: -5px -2px;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+/* Enlarged, bold text for the calorie number */
+.calories-info span {
+  margin: -7px -2px;
+  font-size: 2.4em;
+  font-weight: 700;
+}
+
+/* Aligns text to the right side of container */
+.right {
+  justify-content: flex-end;
+}
+
+/* Indents one level */
+.indent {
+  margin-left: 1em;
+}
+
+/* Indents two levels */
+.double-indent {
+  margin-left: 2em;
+}
+
+/* Applies bottom border to all p tags except those with .no-divider */
+.daily-value p:not(.no-divider) {
+  border-bottom: 1px solid #888989;
+}
+
+/* Styles the footnote text under the label */
+.note {
+  font-size: 0.6rem;
+  margin: 5px 0;
+  padding: 0 8px;
+  text-indent: -8px;
+}
