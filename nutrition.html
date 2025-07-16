@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- HTML5 document declaration with English set as the default language -->
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Sets the character encoding to UTF-8 for proper text rendering -->
+
+  <title>Nutrition Label</title>
+  <!-- Sets the title of the page that appears in the browser tab -->
+
+  <!-- Imports the 'Open Sans' font from Google Fonts in weights 400, 700, and 800 -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+
+  <!-- Links to the external stylesheet where all styles are defined -->
+  <link href="./styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Main container that holds the entire nutrition label -->
+  <div class="label">
+
+    <!-- Header section displaying the title and serving info -->
+    <header>
+      <h1 class="bold">Nutrition Facts</h1>
+      <!-- Divider line under the header -->
+      <div class="divider"></div
+      <p>8 servings per container</p>
+      <!-- Serving size in bold with additional measurement in a span -->
+      <p class="bold">Serving size <span>2/3 cup (55g)</span></p>
+    </header>
+
+    <!-- Large black divider separating header from calories section -->
+    <div class="divider large"></div>
+
+    <!-- Calories section -->
+    <div class="calories-info">
+      <div class="left-container">
+        <!-- Subtitle for the calories section -->
+        <h2 class="bold small-text">Amount per serving</h2>
+        <!-- Label for the calories number -->
+        <p>Calories</p>
+      </div>
+      <!-- Actual calories number aligned to the right -->
+      <span>230</span>
+    </div>
+
+    <!-- Medium divider below the calorie count -->
+    <div class="divider medium"></div>
+
+    <!-- Daily Value section with nutritional data -->
+    <div class="daily-value small-text">
+      <!-- Right-aligned bold label -->
+      <p class="bold right no-divider">% Daily Value *</p>
+      <div class="divider"></div>
+
+      <!-- Total Fat with % value -->
+      <p><span><span class="bold">Total Fat</span> 8g</span> <span class="bold">10%</span></p>
+      <!-- Saturated Fat indented under Total Fat -->
+      <p class="indent no-divider">Saturated Fat 1g <span class="bold">5%</span></p>
+      <div class="divider"></div>
+
+      <!-- Trans Fat listed in italics and indented -->
+      <p class="indent no-divider"><span><i>Trans</i> Fat 0g</span></p>
+      <div class="divider"></div>
+
+      <!-- Cholesterol, Sodium, Carbs, etc. -->
+      <p><span><span class="bold">Cholesterol</span> 0mg</span> <span class="bold">0%</span></p>
+      <p><span><span class="bold">Sodium</span> 160mg</span> <span class="bold">7%</span></p>
+      <p><span><span class="bold">Total Carbohydrate</span> 37g</span> <span class="bold">13%</span></p>
+
+      <!-- Dietary fiber and sugars under carbs -->
+      <p class="indent no-divider">Dietary Fiber 4g</p>
+      <div class="divider"></div>
+      <p class="indent no-divider">Total Sugars 12g</p>
+      <div class="divider double-indent"></div>
+
+      <!-- Added Sugars listed under Total Sugars -->
+      <p class="double-indent no-divider">Includes 10g Added Sugars <span class="bold">20%</span></p>
+      <div class="divider"></div>
+
+      <!-- Protein row without a right-hand % -->
+      <p class="no-divider"><span><span class="bold">Protein</span> 3g</span></p>
+      <div class="divider large"></div>
+
+      <!-- Vitamins and minerals with % values -->
+      <p>Vitamin D 2mcg <span>10%</span></p>
+      <p>Calcium 260mg <span>20%</span></p>
+      <p>Iron 8mg <span>45%</span></p>
+      <p class="no-divider">Potassium 235mg <span>6%</span></p>
+    </div>
+
+    <!-- Divider and footnote text at the bottom -->
+    <div class="divider medium"></div>
+    <p class="note">* The % Daily Value (DV) tells how much a nutrient in a serving of food contributes to a daily
+      diet. 2,000 calories a day is used for general nutrition advice.</p>
+  </div>
+</body>
+</html>
